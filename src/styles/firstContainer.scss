@@ -1,0 +1,108 @@
+.first-container {
+    background-color: #212085;
+    min-height: 500px;
+    max-height: 600px;
+    height: 100%;
+    overflow: hidden;
+
+    .left-nanner {
+        min-height: 500px;
+        max-height: 600px;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .left-nanner-content {
+            color: #ffffff;
+            position: relative;
+            top: -88px;
+            right: 0;
+            padding: 20px;
+
+            @media screen and (max-width: 1025) {
+                right: 0 !important;
+                padding: 20px;
+            }
+
+            @media screen and (max-width: 480px) {
+                right: 0 !important;
+                padding: 20px;
+
+                h1 {
+                    font-size: 2.5rem !important;
+                }
+            }
+
+            h1 {
+                font-size: 3.5rem;
+                line-height: 1.4;
+                margin-bottom: 10px;
+                font-weight: 800;
+            }
+
+            .small-text {
+                p {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 0.4;
+
+                    @media screen and (max-width: 1000px) {
+                        line-height: 1.4 !important;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        line-height: 1.4 !important;
+                    }
+                }
+            }
+        }
+
+        .left-nanner-bg-img {
+            position: absolute;
+            z-index: -1;
+            width: 480px;
+            height: auto;
+            left: -45px;
+            bottom: -7px;
+        }
+    }
+    
+    .right-banner {
+        position: relative;
+        min-height: 500px;
+        max-height: 600px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .right-banner-first-img {
+            width: 450px;
+            position: absolute;
+            bottom: -60px;
+            z-index: 1;
+
+            @media screen and (max-width: 480px) {
+                display: none !important;
+            }
+
+        }
+       
+
+        .right-banner-second-img {
+            width: 335px;
+            position: absolute;
+            right: -24%;
+
+            @media screen and (max-width: 480px) {
+                display: none !important;
+            }
+        }
+    }
+}
+
+.nav-bar {
+    background-color: #212085;
+}

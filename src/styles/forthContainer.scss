@@ -1,0 +1,297 @@
+.people-container {
+
+    .card-group {
+        justify-content: center;
+    }
+
+    .people-item-box.card:first-child {
+        margin-left: 0 !important;
+
+        @media screen and (max-width: 480px) {
+            margin: 0 25px 30px 25px !important;
+        }
+    }
+    .people-item-box.card {
+        position: relative;
+        min-width: 150px !important;
+        max-width: 185px !important;
+        margin: 0 20px 30px 20px !important;
+        box-shadow: 0 8px 8px -1px #dcd7d7;
+        border-radius: 8px !important;
+        overflow: hidden;
+
+        @media screen and (max-width: 480px) {
+            max-width: 100% !important;
+            margin: 0 25px 30px 25px !important;
+        }
+
+        .img-cover {
+            position: absolute;
+            height: calc(100% - 40px);
+            width: 100%;
+            top: 40px;
+            cursor: pointer;
+        }
+
+        .edit-info {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: #dff0fd;
+            cursor: pointer;
+
+            img {
+                height: 8px;
+                width: 8px;
+                position: relative;
+                top: -3px;
+                left: 6px;
+            }
+        }
+
+        .select-user {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            height: 19px;
+            width: 19px;
+            border-radius: 50%;
+            background-color: #101a6c;
+            border: 1px solid;
+            cursor: pointer;
+
+            &.un-checked {
+                background-color: #ffffff !important;
+                border: 1px solid #dcd9d9 !important;
+            }
+
+            img {
+                height: 8px;
+                width: 8px;
+                position: relative;
+                top: -4px;
+                left: 5px;
+            }
+        }
+
+        img.card-img-top {
+            width: 100%;
+            height: auto;
+            min-height: 150px;
+        }
+        .card-body {
+            text-align: center;
+            padding: 14px 0;
+            font-size: 14px;
+
+            .card-title.h5 {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            p.card-text {
+                font-size: 14px;
+                font-weight: 200;
+            }
+        }
+    }
+}
+
+.twin-tabs {
+    float: right;
+    position: relative;
+    font-size: 14px;
+
+    button {
+        min-width: 75px;
+        padding: 4px 8px !important;
+        font-size: 14px;
+
+        &.edit-tab {
+            background-color: transparent;
+            border: none;
+            color: rgb(169, 165, 165);
+            font-weight: 600;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+
+        &.add-tab {
+            background-color: #ebdffd;
+            border: 1px solid #ebdffd;
+            color: #8a6bc0;
+            font-weight: 600;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
+
+    .delete-icon {
+        background-color: #fdd9d9 !important;
+        position: relative;
+        top: 0!important;
+        cursor: pointer;
+
+        svg {
+            height: 15px !important;
+            width: 18px !important;
+
+            path {
+                fill: red !important;
+            }
+        }
+    }
+}
+
+.form-wrapper {
+    padding: 0 10px;
+    position: relative;
+
+    form {
+        .form-group {
+            margin-bottom: 0.6rem !important;
+        }
+    }
+
+    .avater-image-box {
+        display: flex;
+        justify-content: center;
+        margin: 10px auto 25px auto;
+
+        .avatar-user {
+            height: 115px;
+            width: 115px;
+            margin: auto;
+            text-align: center;
+            background-color: #dff0fd;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border: 1px solid #dddee0;
+
+            img {
+                height: inherit;
+                width: inherit;
+            }
+
+            svg {
+                height: 35px !important;
+                width: 35px !important;
+                path {
+                    fill: #98b5e7 !important;
+                }
+            }
+        }
+    }
+
+    label.form-label {
+        margin: 0;
+    }
+
+    input.form-control, select.form-control {
+        height: calc(2.5em + .75rem + 2px) !important;
+    }
+
+    .form-control::placeholder {
+        color: #b6b6b6 !important;
+        font-size: 13px !important;
+    }
+
+    .form-control {
+        font-size: 14px !important;
+        border: 1px solid #f2eeee !important;
+    }
+
+    label.form-label {
+        color: #272685;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+.ViewModal-box {
+    display: flex !important;
+    align-items: center !important;
+
+    .modal-dialog {
+        max-width: 450px !important;
+        @media screen and (max-width: 480px) {
+            .modal-body {
+                padding: 0.5rem 0.3rem !important;
+            }
+        }
+       
+    }
+
+    .view-modal {
+        position: relative;
+
+        .header {
+            h5 {
+                font-size: 15px;
+                display: inline-block;
+                width: 85%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 0 !important;
+            }
+
+            span {
+                display: inline-block;
+                position: absolute;
+                top: -2px;
+                right: 3px;
+                cursor: pointer;
+
+                svg {
+                    height: 14px !important;
+                    width: 14px !important;
+                }
+            }
+        }
+    
+        .image-view {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            max-width: 25%;
+
+            @media screen and (max-width: 480px) {
+                width: 90px !important;
+                height: 90px !important;
+            }
+
+            img {
+                position: absolute;
+                height: inherit;
+                width: inherit;
+                padding: 0 11px 0 0;
+            }
+        }
+    
+        .view-content {
+            display: inline-block;
+            width: 75%;
+            min-width: 200px;
+            
+            @media screen and (max-width: 480px) {
+                padding-left: 10px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+            
+            .discription-data {
+                line-height: 1.5;
+                font-size: 11px;
+            }
+        }
+    }
+}

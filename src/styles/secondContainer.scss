@@ -1,0 +1,36 @@
+.second-container {
+    img {
+        width: 540px;
+
+        @media screen and (max-width: 480px) {
+            width: 340px !important;
+        }
+    }
+
+    .left-content-box {
+        .content-card {
+            float: right;
+        }
+    }
+    .content-card {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        max-width: 442px;
+
+        .card-title {
+            margin-bottom: .75rem;
+            max-width: 255px;
+            font-size: 1.6rem;
+            color: #272685;
+            font-weight: 600;
+        }
+
+        p.card-text {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #bababa;
+        }
+    }
+}

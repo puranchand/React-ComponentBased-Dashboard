@@ -1,0 +1,106 @@
+.third-container {
+    padding: 30px 0;
+
+    .slider-div .BrainhubCarouselItem {
+        padding: 20px 0;
+
+        @media screen and (max-width: 480px){
+            width: 180px !important;
+            max-width: 180px !important;
+            min-width: 180px !important;
+            margin-right: 20px !important;
+            margin-left: 20px !important;
+        }
+        
+        p.card-text {
+            font-size: 12px;
+        }
+    }
+
+    .BrainhubCarousel__arrows {
+        background-color: #d0c9ec;
+        border-radius: 50%;
+
+        span {
+            border-color: #8a65cc;
+        }
+    }
+
+    .card-body {
+        padding: 1rem 0.8rem;
+        font-size: 11px;
+    }
+
+    .card.border-light {
+        box-shadow: 0px 6px 10px 2px #efecec;
+        width: auto !important;
+        min-width: 150px;
+        margin: 0 11px;
+
+        @media screen and (max-width: 480px){
+            min-width: 180px !important;
+        }
+    }
+
+    .card-header-div {
+        padding: 20px 14px 0px 16px;
+        background-color: #ffffff;
+        border-bottom: none;
+    }
+    .user-avatar {
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        position: relative;
+        top: -12px;
+        margin-right: 13px;
+
+        img {
+            height: inherit;
+            width: inherit;
+            border-radius: 50%;
+        }
+    }
+
+    .user-info {
+        display: inline-block;
+
+        .card-title.h5 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        span {
+            font-size: 12px;
+        }
+    }
+    
+    .third-container-label {
+        margin-bottom: 30px;
+
+        span {
+            height: auto;
+            border-radius: 50%;
+            padding: 9px;
+            background: red;
+            position: relative;
+            top: -16px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            margin-bottom: .75rem;
+            max-width: 343px;
+            font-size: 1.6rem;
+            color: #272685;
+            font-weight: 600;
+            display: inline-block;
+        }
+        
+    }
+
+    .BrainhubCarousel__dots {
+        margin: auto;
+    }
+}

@@ -1,0 +1,80 @@
+.sixth-conatiner {
+    margin-top: 3rem;
+    
+    .sith-container-label {
+        text-align: center;
+        padding: 3rem 0;
+
+        h1 {
+            margin-bottom: .75rem;
+            max-width: 255px;
+            font-size: 1.6rem;
+            color: #272685;
+            font-weight: 800;
+            display: inline-block;
+        }
+    }
+
+    .sixth-container-button {
+        float: right;
+
+        button.btn.btn-primary {
+            min-width: 150px;
+            background-color: #272685;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+    
+    .form-wrapper {
+        box-shadow: -3px 8px 25px -3px #ece7e7;
+        border-radius: 10px !important;
+        overflow: hidden;
+        padding: 47px 7%;
+        position: relative;
+        right: -15px;
+
+        
+        @media screen and (max-width: 480px){
+            right: 0 !important;
+        }
+
+        label.form-label {
+            margin: 0;
+        }
+
+        input.form-control, select.form-control {
+            height: calc(2.5em + .75rem + 2px) !important;
+        }
+
+        .form-control::placeholder {
+            color: #b6b6b6 !important;
+            font-size: 14px !important;
+        }
+
+        .form-control {
+            font-size: 14px !important;
+        }
+
+        label.form-label {
+            color: #272685;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+    }
+
+    .sixth-content-conatiner {
+        margin-bottom: 5rem;
+
+        .map-div {
+            position: relative;
+            top: 62px;
+            left: -15px;
+
+            @media screen and (max-width: 480px){
+                left: 0 !important;
+            }
+        }
+    }
+}

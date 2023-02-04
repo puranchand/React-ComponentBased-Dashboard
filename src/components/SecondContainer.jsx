@@ -37,7 +37,7 @@ const SecondContainer = () => {
     };
 
     return (
-        <div className="second-container">
+        <div className="second-container" id="about-us">
             <Container fluid="md">
                 {secondContentData.map((item, index) => {
                     return leftImageWithContent(item, index)

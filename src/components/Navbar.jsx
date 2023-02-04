@@ -36,19 +36,19 @@ const Navber = () => {
                 >
                          <Nav className="m-auto justify-content-center custome-active-menu" >
                             <Nav.Item onClick={() => handleSelectMenu('home')}>
-                                <Nav.Link className={menu && menu.home ? "active " : ''}>Home</Nav.Link>
+                                <Nav.Link href="#home" className={menu && menu.home ? "active " : ''}>Home</Nav.Link>
                             </Nav.Item>
                             <Nav.Item onClick={() => handleSelectMenu('about')}>
-                                <Nav.Link  className={menu && menu.about ? "active " : ''}>About Us</Nav.Link>
+                                <Nav.Link href="#about-us" className={menu && menu.about ? "active " : ''}>About Us</Nav.Link>
                             </Nav.Item>
                             <Nav.Item onClick={() => handleSelectMenu('service')}>
-                                <Nav.Link className={menu && menu.service ? "active " : ''}>Services</Nav.Link>
+                                <Nav.Link href="#services" className={menu && menu.service ? "active " : ''}>Services</Nav.Link>
                             </Nav.Item>
                             <Nav.Item onClick={() => handleSelectMenu('pricing')}>
-                                <Nav.Link className={menu && menu.pricing ? "active " : ''}>Pricing</Nav.Link>
+                                <Nav.Link href="#pricing" className={menu && menu.pricing ? "active " : ''}>Pricing</Nav.Link>
                             </Nav.Item>
                             <Nav.Item onClick={() => handleSelectMenu('careers')}>
-                                <Nav.Link className={menu && menu.careers ? "active " : ''}>careers</Nav.Link>
+                                <Nav.Link href="#careers" className={menu && menu.careers ? "active " : ''}>careers</Nav.Link>
                             </Nav.Item>
                         </Nav>
                    

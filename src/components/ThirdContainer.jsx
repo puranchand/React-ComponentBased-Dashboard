@@ -29,7 +29,7 @@ const ThirdContainer = () => {
     }
 
     return (
-        <div className="third-container">
+        <div className="third-container" id="services">
             <Container fluid="md">
                 <div className="third-container-label">
                     <span>

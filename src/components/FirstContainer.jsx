@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const FirstContainer = () => {
     return(
-        <div className="first-container">
+        <div className="first-container" id="home">
             <Row>
                 <Col>
                     <div className="left-nanner">

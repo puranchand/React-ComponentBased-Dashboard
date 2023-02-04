@@ -7,7 +7,7 @@ import GoogleMapComponent from './GoogleMap';
 
 const SixthContainer = () => {
     return (
-        <Container fluid="md" className="sixth-conatiner">
+        <Container fluid="md" className="sixth-conatiner" id="pricing">
             <div className="sith-container-label">
                 <h1>
                     {"Contact Us"}
